@@ -42,10 +42,10 @@ INSERT INTO Employee values(1,'John',1001);
 select * from Employee;
 <!-- salir de postgres -->
 \q
-6) salir de terminal dentro del contenedor
+6. salir de terminal dentro del contenedor
 exit
-7) cerrar CMD
+7. cerrar CMD
 exit
-8) ejecutar en la terminal dentro del proyecto en vs code
+8. ejecutar en la terminal dentro del proyecto en vs code
 nodemon server.js
 
