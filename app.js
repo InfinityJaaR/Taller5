@@ -56,6 +56,16 @@ app.get('/work', function(request, response) {
 app.get("/about", function(req, res) {
     res.render('about');
 });
+
+app.get("/about/:carnet", function(req, res) {
+    data={
+        carnet:req.params.carnet,
+        nombre: 'Javier Alexander',
+        apellidos: 'Alfaro Romero'
+    }
+    res.render('about',data);
+});
+
 app.get('/postgres', function (req, res, next) {
     client.query('SELECT * FROM Employee where id = $1', [1], function (err, result) {
         if (err) {
